@@ -1,0 +1,12 @@
+# ResNet50 for CIFAR-100 (used as teacher in RelKD experiments)
+# Trained from scratch per Park et al. (CVPR 2019): SGD 0.1, milestones
+# [60,120,160], 200 epochs → expected ~77.76% accuracy.
+# NOTE: from_config (random init), NOT from_pretrained — using ImageNet
+# weights conflicts with the randomly-initialized CIFAR stem at LR=0.1.
+short_name: resnet50_cifar100
+base_model: timm/resnet50.tv_in1k
+model_type: image_classification
+architecture: from_config
+cifar_head: true
+cifar_head_type: resnet
+num_classes: 100

@@ -1,0 +1,10 @@
+# Blockwise Knowledge Distillation - trains each student layer independently
+type: bkd
+framework: silverspoon-kd
+class_name: BlockwiseDistiller
+alignment:
+  module_pattern: null
+  adapter:
+    type: generic
+    index: 0
+parallel_max_workers: 0

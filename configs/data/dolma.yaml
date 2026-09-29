@@ -1,0 +1,12 @@
+# Dolma dataset (allenai/dolma3_pool)
+type: dolma
+dataset: allenai/dolma3_pool
+max_length: 1024
+safe_char_limit: -1
+eval_size: 1000
+test_size: 0.1
+streaming: true
+buffer_size: 10000
+map_batch_size: 1000
+max_samples: 10000000
+cache_dir: null

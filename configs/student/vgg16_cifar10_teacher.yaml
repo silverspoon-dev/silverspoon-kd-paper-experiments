@@ -1,0 +1,8 @@
+# VGG16 teacher fine-tuning on CIFAR-10 (standard convolutions)
+short_name: vgg16_cifar10_teacher
+base_model: timm/vgg16.tv_in1k
+model_type: image_classification
+architecture: from_config
+cifar_head: true
+num_classes: 10
+use_depthwise_separable: false

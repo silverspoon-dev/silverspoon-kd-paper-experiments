@@ -1,0 +1,14 @@
+# ResNet50 teacher for CIFAR-100 (RKD paper replication)
+# The teacher must be trained first (teacher.sh → runs/.../model/).
+# base_model provides the architecture; name is overridden by scripts
+# to point to the trained checkpoint so load_teacher_model loads the
+# trained weights (not just ImageNet + random CIFAR stem/head).
+name: null  # overridden by scripts: teacher.name=$RUNS_DIR/.../model
+base_model: "timm/resnet50.tv_in1k"
+short_name: resnet50_cifar100
+model_type: image_classification
+cifar_head: true
+cifar_head_type: resnet
+num_classes: 100
+# Alignment on the global pooling layer (final embedding before classifier)
+layer_pattern: 'timm_model\.global_pool$'

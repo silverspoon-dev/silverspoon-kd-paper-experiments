@@ -1,0 +1,7 @@
+# BERT-base-cased teacher (for TextBrewer comparison)
+name: "google-bert/bert-base-cased"
+short_name: bert_base_cased
+model_type: mlm
+layer_pattern: 'bert\.encoder\.layer\.(\d+)$'
+num_layers: 12
+hidden_size: 768

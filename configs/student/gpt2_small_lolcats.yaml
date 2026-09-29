@@ -1,0 +1,9 @@
+# GPT-2 Small with LoLCATs hybrid attention (~125M)
+# Hybrid = sliding-window softmax (recent tokens) + linear attention (older tokens).
+# This is the canonical LoLCATs approach (Arora et al., 2024).
+short_name: gpt2_small_lolcats
+base_model: openai-community/gpt2
+architecture: linearized
+linearization_method: lolcats
+freeze_copied: true
+window_size: 64

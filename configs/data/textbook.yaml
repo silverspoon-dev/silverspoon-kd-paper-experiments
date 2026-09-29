@@ -1,0 +1,7 @@
+# Textbook dataset (open-phi/textbooks)
+type: textbook
+dataset: open-phi/textbooks
+max_length: 512
+safe_char_limit: -1
+eval_size: 1000
+test_size: 0.0

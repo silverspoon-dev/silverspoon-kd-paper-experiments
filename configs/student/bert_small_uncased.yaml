@@ -1,0 +1,11 @@
+# BERT-small student (pruned from BERT-base)
+short_name: bert_small_uncased
+base_model: google-bert/bert-base-uncased
+model_type: mlm
+architecture: pruned
+reconfig:
+  name_suffix: "small"
+  config_diff:
+    hidden_size: 384
+    intermediate_size: 1536
+    num_attention_heads: 6

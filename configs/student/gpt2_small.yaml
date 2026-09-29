@@ -1,0 +1,5 @@
+# GPT-2 Small student (124M, 12 layers, 768 hidden)
+short_name: gpt2_small
+base_model: openai-community/gpt2
+architecture: from_config
+teacher_layers: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23]

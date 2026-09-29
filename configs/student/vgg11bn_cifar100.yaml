@@ -1,0 +1,10 @@
+# VGG11-BN student for CIFAR-100 (RKD paper replication)
+# Random init, pre_logits removed, single FC(512, 100) classifier
+short_name: vgg11bn_cifar100
+base_model: timm/vgg11_bn.tv_in1k
+model_type: image_classification
+architecture: from_config
+cifar_head: true
+num_classes: 100
+# Alignment on the global pooling layer (final embedding before classifier)
+layer_pattern: 'timm_model\.head\.global_pool$'

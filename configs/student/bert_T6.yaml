@@ -1,0 +1,12 @@
+# BERT T6 student (6 layers from BERT-base, same hidden dim)
+short_name: bert_T6
+base_model: google-bert/bert-base-uncased
+model_type: mlm
+architecture: pruned
+pretrained_path: null
+teacher_layers: [1, 3, 5, 7, 9, 11]
+reconfig:
+  freeze_copied_weights: true
+  name_suffix: "T6"
+  config_diff:
+    num_hidden_layers: 6

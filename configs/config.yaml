@@ -1,0 +1,43 @@
+# Main Hydra config: python train.py teacher=qwen_0.6B student=qwen_420M distiller=bkd
+defaults:
+  - optional teacher: null
+  - student: ???
+  - distiller: bkd
+  - training: default
+  - data: textbook
+  - optional loss: mse
+  - override hydra/job_logging: none
+  - _self_
+
+experiment:
+  name: null
+  tags: []
+
+init:
+  method: scratch
+  freeze_copied: true
+  from_experiment: null
+  checkpoint_step: null
+  copy_teacher_after_load:
+    embed_tokens: false
+    norm: false
+    lm_head: false
+    tie_weights: false
+
+run:
+  seed: 42
+  device: auto
+  dtype: bfloat16
+  teacher_dtype: null
+  student_dtype: null
+  name_only: false
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  sweep:
+    dir: ./multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.name}
+  job:
+    chdir: false

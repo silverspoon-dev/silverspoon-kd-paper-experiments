@@ -1,0 +1,7 @@
+# BERT-base-cased fine-tuned on MNLI (teacher for downstream KD)
+name: "runs/hf__standard__bert_base_cased__mnli__scratch/model"
+short_name: bert_base_cased
+model_type: sequence_classification
+layer_pattern: 'bert\.encoder\.layer\.(\d+)$'
+num_layers: 12
+hidden_size: 768

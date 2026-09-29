@@ -1,0 +1,4 @@
+# Standard training (no LoRA, no distillation)
+type: standard
+framework: hf
+class_name: Trainer

@@ -1,0 +1,5 @@
+# VGG16 teacher (ImageNet)
+name: "timm/vgg16.tv_in1k"
+short_name: vgg16
+model_type: image_classification
+layer_pattern: 'timm_model\.features\.(2|5|7|10|12|14|17|19|21|24|26|28)$'

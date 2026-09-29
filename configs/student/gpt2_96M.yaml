@@ -1,0 +1,7 @@
+# GPT-2 ~96M student (reduced MLP from GPT-2 Small)
+# Same hidden size (768) and layers (12) as teacher for projector-free BKD
+short_name: gpt2_96M
+base_model: openai-community/gpt2
+architecture: from_config
+config_overrides:
+  n_inner: 1536

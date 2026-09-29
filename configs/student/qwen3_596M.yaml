@@ -1,0 +1,4 @@
+# Qwen3-596M student (same architecture as teacher, random init)
+short_name: qwen3_596M
+base_model: Qwen/Qwen3-0.6B
+architecture: from_config

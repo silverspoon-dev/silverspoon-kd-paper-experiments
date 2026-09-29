@@ -1,0 +1,12 @@
+# Holistic Knowledge Distillation - end-to-end alignment across all layers
+type: hkd
+framework: silverspoon-kd
+class_name: HolisticDistiller
+alignment:
+  module_pattern: null
+  adapter:
+    type: generic
+    index: 0
+deepcopy_captured_args_and_kwargs: false
+count_flops: false
+magnitude_aware_weighting: true

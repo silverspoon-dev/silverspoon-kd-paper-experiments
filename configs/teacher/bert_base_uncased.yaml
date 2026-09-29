@@ -1,0 +1,7 @@
+# BERT-base-uncased teacher
+name: "google-bert/bert-base-uncased"
+short_name: bert_base_uncased
+model_type: mlm
+layer_pattern: 'bert\.encoder\.layer\.(\d+)$'
+num_layers: 12
+hidden_size: 768

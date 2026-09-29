@@ -1,0 +1,9 @@
+# VGG16 teacher fine-tuned on CIFAR-10
+# Requires: bash scripts/vgg16_cnn/teacher.sh (fine-tunes VGG16 on CIFAR-10 first)
+name: "runs/hf__standard__vgg16_cifar10_teacher__scratch/model"
+base_model: "timm/vgg16.tv_in1k"
+short_name: vgg16_cifar10
+model_type: image_classification
+cifar_head: true
+num_classes: 10
+layer_pattern: 'timm_model\.features\.(2|5|7|10|12|14|17|19|21|24|26|28)$'

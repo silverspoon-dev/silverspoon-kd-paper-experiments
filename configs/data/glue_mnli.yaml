@@ -1,0 +1,4 @@
+type: glue_mnli
+short_name: mnli
+max_length: 128
+num_labels: 3

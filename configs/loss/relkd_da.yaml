@@ -1,0 +1,5 @@
+# Relation-based KD combined distance + angle loss (Park et al., CVPR 2019)
+# Default weights: dist_weight=1, angle_weight=2
+type: relkd_da
+dist_weight: 1.0
+angle_weight: 2.0

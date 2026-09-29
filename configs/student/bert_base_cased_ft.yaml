@@ -1,0 +1,7 @@
+# BERT-base-cased for teacher fine-tuning on downstream tasks
+# Override model_type per task: sequence_classification, question_answering, token_classification
+short_name: bert_base_cased
+base_model: google-bert/bert-base-cased
+model_type: mlm
+architecture: from_pretrained
+pretrained_path: google-bert/bert-base-cased

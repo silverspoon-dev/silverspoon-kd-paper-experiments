@@ -1,0 +1,44 @@
+# Outputs
+runs/
+results/
+wandb/
+data/
+*.pt
+*.bin
+*.safetensors
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Hydra
+outputs/
+multirun/
+.hydra/
+
+# IDE
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.log
+
+# Profiling
+*.json.gz
+*.trace
+
+# Claude Code
+.claude/

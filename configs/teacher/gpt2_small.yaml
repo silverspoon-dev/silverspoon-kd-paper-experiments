@@ -1,0 +1,4 @@
+# GPT-2 Small teacher (124M)
+name: "openai-community/gpt2"
+short_name: gpt2_small
+layer_pattern: "transformer\\.h\\.(\\d+)$"

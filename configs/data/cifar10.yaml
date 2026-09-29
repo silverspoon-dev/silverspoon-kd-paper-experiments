@@ -1,0 +1,4 @@
+# CIFAR-10 dataset (50K train / 10K test, 32x32, 10 classes)
+type: cifar10
+image_size: 32
+num_shards: 8

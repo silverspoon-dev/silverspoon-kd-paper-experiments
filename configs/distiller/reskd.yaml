@@ -1,0 +1,8 @@
+# Response-Based KD - Hinton-style soft target distillation
+type: reskd
+framework: silverspoon-kd
+class_name: ResponseBasedDistiller
+temperature: 2.0
+alpha: 0.5
+chunk_size: 1024
+magnitude_aware_weighting: true

@@ -1,0 +1,5 @@
+# Qwen3-1.7B student loaded from pretrained weights (for QAT experiments)
+short_name: qwen3_1.7B_pretrained
+base_model: Qwen/Qwen3-1.7B
+architecture: from_pretrained
+pretrained_path: Qwen/Qwen3-1.7B

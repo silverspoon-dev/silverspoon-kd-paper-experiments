@@ -1,0 +1,7 @@
+# VGG16 student for CIFAR-10 (random init with CIFAR head)
+short_name: vgg16_cifar10
+base_model: timm/vgg16.tv_in1k
+model_type: image_classification
+architecture: from_config
+cifar_head: true
+num_classes: 10

@@ -1,0 +1,5 @@
+# Qwen3-596M student loaded from pretrained weights
+short_name: qwen3_596M_pretrained
+base_model: Qwen/Qwen3-0.6B
+architecture: from_pretrained
+pretrained_path: Qwen/Qwen3-0.6B

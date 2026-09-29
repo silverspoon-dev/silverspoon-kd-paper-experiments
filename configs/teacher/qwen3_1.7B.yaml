@@ -1,0 +1,4 @@
+# Qwen3-1.7B teacher
+name: "Qwen/Qwen3-1.7B"
+short_name: qwen3_1.7B
+layer_pattern: "model\\.layers\\.(\\d+)$"

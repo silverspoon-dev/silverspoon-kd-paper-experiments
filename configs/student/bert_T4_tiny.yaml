@@ -1,0 +1,15 @@
+# BERT T4-tiny student (4 layers, small hidden dim)
+short_name: bert_T4_tiny
+base_model: google-bert/bert-base-uncased
+model_type: mlm
+architecture: pruned
+pretrained_path: null
+teacher_layers: [2, 5, 8, 11]
+reconfig:
+  freeze_copied_weights: true
+  name_suffix: "T4-tiny"
+  config_diff:
+    num_hidden_layers: 4
+    hidden_size: 312
+    intermediate_size: 1200
+    num_attention_heads: 12

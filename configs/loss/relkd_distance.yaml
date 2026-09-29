@@ -1,0 +1,2 @@
+# Relation-based KD distance-wise distillation loss (Park et al., CVPR 2019)
+type: relkd_distance
